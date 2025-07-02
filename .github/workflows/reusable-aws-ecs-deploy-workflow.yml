@@ -97,16 +97,17 @@ jobs:
       id-token: write
       contents: read
     outputs:
+
       registry: ${{ steps.ecr-login.outputs.registry }}
     steps:
       # https://github.com/marketplace/actions/docker-login
-      # - name: Docker - login-action
-      #   if: inputs.registry-login
-      #   uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3.4.0
-      #   with:
-      #     registry: ${{ inputs.registry }}
-      #     username: ${{ secrets.GIT_USER }}
-      #     password: ${{ secrets.GITPKG_TOKEN }}
+      - name: Docker - login-action
+        if: inputs.registry-login
+        uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3.4.0
+        with:
+          registry: ${{ inputs.registry }}
+          username: ${{ secrets.GIT_USER }}
+          password: ${{ secrets.GITPKG_TOKEN }}
 
       # https://github.com/actions/checkout
       - name: GitHub - checkout

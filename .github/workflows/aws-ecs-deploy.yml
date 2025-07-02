@@ -18,7 +18,7 @@ jobs:
     name: Call Workflow - Docker Build & Push / AWS ECS Deployment
     uses: ./.github/workflows/reusable-aws-ecs-deploy-workflow.yml
     with:
-      project: 'dsbizdev'
+      project: 'copy'
       env: "dev"
       docker-context: '.'
       docker-file: './infra/docker/develop/php/Dockerfile'
