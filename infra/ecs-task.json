@@ -1,5 +1,5 @@
 {
-  "family": "dsbizdev-dbo-dd-dev",
+  "family": "copy-dbo-dd-dev",
   "taskRoleArn": "arn:aws:iam::734908905460:role/ecsTaskExecutionRole",
   "executionRoleArn": "arn:aws:iam::734908905460:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
@@ -29,7 +29,7 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/aws/ecs/dsbizdev-dbo-cluster-dev/dsbizdev-dbo-dd-dev",
+          "awslogs-group": "/aws/ecs/copy-dbo-dd-dev",
           "mode": "non-blocking",
           "max-buffer-size": "1m",
           "awslogs-region": "ap-northeast-1",
