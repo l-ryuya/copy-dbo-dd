@@ -7,7 +7,7 @@
   "memory": "512",
   "containerDefinitions": [
     {
-      "name": "dbo-dd",
+      "name": "copy-dd-container",
       "image": "<IMAGE_URI>",
       "cpu": 128,
       "memory": 256,
