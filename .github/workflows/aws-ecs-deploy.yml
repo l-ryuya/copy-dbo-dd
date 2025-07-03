@@ -29,7 +29,7 @@ jobs:
       aws-ecs-namespace: "dbo"
       aws-ecs-service-name: "dd"
       aws-ecs-task-definition-filepath: "./infra/ecs-task.json"
-      aws-ecs-task-definition-container-name: ''
+      aws-ecs-task-definition-container-name: 'copy-dd-container'
       aws-ecs-task-definition-environment-variables: ''
       aws-ecs-task-definition-secrets: ''
       aws-ecs-desired-count: 1
