@@ -1,5 +1,5 @@
 {
-  "family": "copy-dbo-dd-dev",
+  "family": "dsbizdev-dbo-dd-dev",
   "taskRoleArn": "arn:aws:iam::734908905460:role/ecsTaskExecutionRole",
   "executionRoleArn": "arn:aws:iam::734908905460:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
@@ -7,7 +7,7 @@
   "memory": "512",
   "containerDefinitions": [
     {
-      "name": "copy-dd-container",
+      "name": "dbo-dd",
       "image": "<IMAGE_URI>",
       "cpu": 128,
       "memory": 256,
@@ -29,7 +29,7 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/aws/ecs/copy-dbo-dd-dev",
+          "awslogs-group": "/aws/ecs/dsbizdev-dbo-cluster-dev/dsbizdev-dbo-dd-dev",
           "mode": "non-blocking",
           "max-buffer-size": "1m",
           "awslogs-region": "ap-northeast-1",
