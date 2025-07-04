@@ -4,8 +4,8 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRESQL_USERNAME=my_user
-      - POSTGRESQL_PASSWORD=my_password
+      - POSTGRESQL_USERNAME=copy-dbo-dd
+      - POSTGRESQL_PASSWORD=copy-dbo-dd
 
   bizdevforge-api:
     build: ./php
@@ -18,8 +18,8 @@ services:
       - DB_HOST=postgresql-db
       - DB_PORT=5432
       - DB_DATABASE=postgres
-      - DB_USERNAME=my_user
-      - DB_PASSWORD=my_password
+      - DB_USERNAME=copy-dbo-dd
+      - DB_PASSWORD=copy-dbo-dd
     depends_on:
       - postgresql-db
     volumes:
