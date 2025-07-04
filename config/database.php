@@ -88,7 +88,7 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DB_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'copy-dbo-dd.ctei2wkaaszp.ap-northeast-1.rds.amazonaws.com'),
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'copy-dbo-dd'),
             'username' => env('DB_USERNAME', 'postgres'),
