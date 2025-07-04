@@ -71,7 +71,7 @@
         },
         {
           "name": "LARAVEL_DATABASE_USER",
-          "value": "app_dd"
+          "value": "postgres"
         },
         {
           "name": "DB_SCHEMA",
@@ -88,6 +88,10 @@
         {
           "name": "MAIL_USERNAME",
           "value": "AKIAYSE4N4AV6UETVGZT"
+        },
+        {
+          "name": "LARAVEL_DATABASE_PASSWORD",
+          "value": "copy-dbo-dd"
         }
       ]
     }

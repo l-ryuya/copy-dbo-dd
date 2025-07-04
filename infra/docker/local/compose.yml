@@ -4,7 +4,7 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRESQL_USERNAME=copy-dbo-dd
+      - POSTGRESQL_USERNAME=postgres
       - POSTGRESQL_PASSWORD=copy-dbo-dd
 
   bizdevforge-api:
@@ -18,7 +18,7 @@ services:
       - DB_HOST=postgresql-db
       - DB_PORT=5432
       - DB_DATABASE=postgres
-      - DB_USERNAME=copy-dbo-dd
+      - DB_USERNAME=postgres
       - DB_PASSWORD=copy-dbo-dd
     depends_on:
       - postgresql-db
