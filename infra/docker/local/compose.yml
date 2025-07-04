@@ -20,6 +20,7 @@ services:
       - DB_DATABASE=postgres
       - DB_USERNAME=postgres
       - DB_PASSWORD=copy-dbo-dd
+      - DB_SCHEMA=public
     depends_on:
       - postgresql-db
     volumes:
