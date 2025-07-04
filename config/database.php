@@ -96,7 +96,7 @@ return [
             'charset' => env('DB_CHARSET', 'utf8'),
             'prefix' => '',
             'prefix_indexes' => true,
-            'schema' => env('DB_SCHEMA', 'dbo_dd'),
+            'schema' => env('DB_SCHEMA', 'public'),
             'sslmode' => 'prefer',
         ],
         // 'pgsql' => [
