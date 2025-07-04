@@ -20,6 +20,7 @@
         {
           "name": "dbo-dd",
           "containerPort": 3000,
+          "hostPort": 3000,
           "protocol": "tcp"
         }
       ],
@@ -58,7 +59,7 @@
         },
         {
           "name": "LARAVEL_DATABASE_HOST",
-          "value": "dsbizdev-dbo-cluster-dev.cluster-c906g0qeiekr.ap-northeast-1.rds.amazonaws.com"
+          "value": "copy-dbo-dd.ctei2wkaaszp.ap-northeast-1.rds.amazonaws.com"
         },
         {
           "name": "LARAVEL_DATABASE_PORT_NUMBER",
