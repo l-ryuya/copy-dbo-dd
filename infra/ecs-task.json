@@ -67,7 +67,7 @@
         },
         {
           "name": "LARAVEL_DATABASE_NAME",
-          "value": "dbo"
+          "value": "copy-dbo-dd"
         },
         {
           "name": "LARAVEL_DATABASE_USER",
